@@ -10,7 +10,7 @@
 
     <!-- Title -->
     <title>Hyata Agritech-The Future of Farming</title>
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/logowhitebackground.png">
 
@@ -18,8 +18,59 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+<!-- Styles  for the scrolling numbers-->	
+<style>
+    .example1 {
+     height: 50px;	
+     overflow: hidden;
+     position: relative;
+    }
+    .example1 h3 {
+     font-size: 1.5em;
+     color: limegreen;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     line-height: 50px;
+     text-align: center;
+     /* Starting position */
+     -moz-transform:translateX(100%);
+     -webkit-transform:translateX(100%);	
+     transform:translateX(100%);
+     /* Apply animation to this element */	
+     -moz-animation: example1 15s linear infinite;
+     -webkit-animation: example1 15s linear infinite;
+     animation: example1 15s linear infinite;
+    }
+    /* Move it (define the animation) */
+    @-moz-keyframes example1 {
+     0%   { -moz-transform: translateX(100%); }
+     100% { -moz-transform: translateX(-100%); }
+    }
+    @-webkit-keyframes example1 {
+     0%   { -webkit-transform: translateX(100%); }
+     100% { -webkit-transform: translateX(-100%); }
+    }
+    @keyframes example1 {
+     0%   { 
+     -moz-transform: translateX(100%); /* Firefox bug fix */
+     -webkit-transform: translateX(100%); /* Firefox bug fix */
+     transform: translateX(100%); 		
+     }
+     100% { 
+     -moz-transform: translateX(-100%); /* Firefox bug fix */
+     -webkit-transform: translateX(-100%); /* Firefox bug fix */
+     transform: translateX(-100%); 
+     }
+    }
+    </style>
 
 <body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- Preloader -->
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-circle"></div>
@@ -28,46 +79,17 @@
         </div>
     </div>
 
+    
+
     <!-- ##### Header Area Start ##### -->
     <header class="header-area">
 
         <!-- ***** Top Header Area ***** -->
         <div class="top-header-area">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="top-header-content d-flex align-items-center justify-content-between">
-                            <!-- Top Header Content -->
-                            <div class="top-header-meta">
-                                <!-- <a href="#" data-toggle="tooltip" data-placement="bottom" title="hyata.hydro@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: hyata.hydro@gmail.com</span></a> -->
-                                <p style="color: white;"><i class="fa fa-phone" ></i> Call Us @ 9620258650,8867700654,8553024756</p>
-                            </div>
-
-                            <!-- Top Header Content -->
-                            <!-- <div class="top-header-meta d-flex">
-                               
-                                <div class="language-dropdown">
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle mr-30" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">ENGLISH</a>
-                                            <a class="dropdown-item" href="#">KANNADA</a>
-                                            <a class="dropdown-item" href="#">HINDI</a>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                                <div class="login">
-                                    <a href="#"><i class="fa fa-user" aria-hidden="true"></i> <span>Login</span></a>
-                                </div>
-                              
-                                <div class="cart">
-                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a>
-                                </div>
-                            </div> -->
-                        </div>
+                <div class="example1">
+                    <h3>Contact : 9620258650 , 8867700654   &nbsp;&nbsp; MailTo:- Hyata.Agritech@gmail.com</h3>
                     </div>
-                </div>
             </div>
         </div>
 
@@ -224,7 +246,7 @@
                     <div class="alazea-service-area mb-100">
 
                         <!-- Single Service Area -->
-                        <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="100ms">
+                        <div  data-aos="fade-right" class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="100ms">
                             <!-- Icon -->
                             <div class="service-icon mr-30">
                                 <img src="img/core-img/plantscare.png" alt="">
@@ -237,7 +259,7 @@
                         </div>
 
                         <!-- Single Service Area -->
-                        <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="300ms">
+                        <div  data-aos="fade-right" class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="300ms">
                             <!-- Icon -->
                             <div class="service-icon mr-30">
                                 <img style="width:280px;height:60px;" src="img/core-img/affordablekits.png" alt="">
@@ -250,7 +272,7 @@
                         </div>
 
                         <!-- Single Service Area -->
-                        <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="500ms">
+                        <div  data-aos="fade-right" class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="500ms">
                             <!-- Icon -->
                             <div class="service-icon mr-30">
                                 <img  src="img/core-img/seed.png" alt="">
@@ -265,7 +287,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-6">
+                <div  data-aos="fade-left" class="col-12 col-lg-6">
                     <div class="alazea-video-area bg-overlay mb-100">
                         <img src="img/bg-img/youtubevideo.jpg" alt="">
                         <a href="" class="video-icon">
@@ -277,18 +299,20 @@
         </div>
     </section>
     <!-- ##### Service Area End ##### -->
-
+<style>
+    
+</style>
     <!-- ##### About Area Start ##### -->
     <section class="about-us-area section-padding-100-0">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-12 col-lg-5">
                     <!-- Section Heading -->
-                    <div class="section-heading">
-                        <h2 style="text-align: center;">ABOUT US</h2><div><br></div>
-                        <li style="color: rgb(8, 194, 8); font-size: 20px;">Hello Bangaloreans, welcome to the Future Of Farming , We the Hyata-Agritech are into the Hydroponic Kits and Automation Modules !!!</li><br>
-                        <li style="color: rgb(8, 194, 8); font-size: 20px;">Farming has evolved from what it was once upon a time. Today, you not need acres of land to grow your own vegetables. you'll even farm with no soil. this is often referred to as hydroponic farming. </li><br>
-                        <li style="color: rgb(8, 194, 8); font-size: 20px;">Growing plants hydroponically relies completely on water. it's also important to notice that this method reduces the quantity of water required to grow plants as compared to traditional farming. It also offers a better yield while using minimum space since hydroponic farms are arranged vertically rather than horizontally.</li>
+                    <div  class="section-heading">
+                        <h2  class="hover hover-3" style="text-align: center;">ABOUT US</h2><div><br></div>
+                        <li data-aos="fade-right" style="color: rgb(8, 194, 8); font-size: 20px;">Hello Bangaloreans, welcome to the Future Of Farming , We the Hyata-Agritech are into the Hydroponic Kits and Automation Modules !!!</li><br>
+                        <li data-aos="fade-left" style="color: rgb(8, 194, 8); font-size: 20px;">Farming has evolved from what it was once upon a time. Today, you not need acres of land to grow your own vegetables. you'll even farm with no soil. this is often referred to as hydroponic farming. </li><br>
+                        <li data-aos="fade-right" style="color: rgb(8, 194, 8); font-size: 20px;">Growing plants hydroponically relies completely on water. it's also important to notice that this method reduces the quantity of water required to grow plants as compared to traditional farming. It also offers a better yield while using minimum space since hydroponic farms are arranged vertically rather than horizontally.</li>
                     </div>
 
                     <!-- Progress Bar Content Area -->
@@ -343,25 +367,26 @@
                     <div class="alazea-benefits-area">
                         <div class="row">
                             <!-- Single Benefits Area -->
-                            <div class="col-12 col-sm-6">
+                            <div data-aos="fade-down-right" class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
                                     <img style="width:75px;height:75px;" src="img/core-img/qualityproducts.png" alt="">
                                     <h5>Quality Products</h5>
                                     <p >We Always Ensure to Provide the Best Quality to Our Customers. </p>
                                 </div>
                             </div>
-
+                           
                             <!-- Single Benefits Area -->
-                            <div class="col-12 col-sm-6">
+                            <div data-aos="fade-down-left" class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
                                     <img style="width:85px;height:85px;" src="img/core-img/perfectservice.png" alt="">
-                                    <h5>Perfect Service</h5>
+                                    <h5>Perfect Service</h5>  
+                                    <span class="wiggle"> wiggle this</span>
                                     <p>We Deliver the Product and Setup the Hydroponic Kits in the Customer Place.</p>
                                 </div>
                             </div>
 
                         
-                            <div class="col-12 col-sm-6">
+                            <div data-aos="fade-up-right" class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
                                     <img style="width:95px;height:85px;" src="img/core-img/ownfood.png" alt="">
                                     <h5>Grow Food On Your Own</h5>
@@ -370,7 +395,7 @@
                             </div>
 
                             <!-- Single Benefits Area -->
-                            <div class="col-12 col-sm-6">
+                            <div data-aos="fade-up-left" class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
                                     <img style="width:75px;height:75px;" src="img/core-img/ecofriendly.png" alt="">
                                     <h5>Environmentally friendly</h5>
@@ -1074,5 +1099,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/active.js"></script>
     <script src="../Hyata new website 12-11-2021/css/general.css"></script>
 </body>
-
+<audio controls autoplay>
+    <source src="../music/chilled-acoustic-indie-folk-instrumental-background-music-for-videos-5720.mp3" type="audio/ogg">
+    <source src="../music//chilled-acoustic-indie-folk-instrumental-background-music-for-videos-5720.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 </html>
